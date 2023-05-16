@@ -6,11 +6,9 @@ authorId: 'adam'
 published: '2023-05-15'
 ---
 
-![](http://www.m2coders.com/wp-content/uploads/2021/04/Opencart_banner.png)
-
 ### **Step 1: Update your system** Before installing any new software, update your system packages. Open a terminal on your Raspberry Pi and execute the following commands:
 
-```sql
+```bash
 sudo apt update
 sudo apt upgrade
 ```
@@ -23,7 +21,7 @@ To run OpenCart on your Raspberry Pi, you'll need to install a web server, a dat
 
 Add the PHP repository and update your package list:
 
-```arduino
+```bash
 sudo apt-get install -y apt-transport-https lsb-release ca-certificates wget
 wget -qO - https://packages.sury.org/php/apt.gpg | sudo gpg --dearmor -o /usr/share/keyrings/php-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/php-archive-keyring.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
@@ -38,7 +36,7 @@ sudo apt install php8.1 php8.1-mysql php8.1-gd php8.1-curl php8.1-xml php8.1-mbs
 
 Verify that PHP 8.1 is installed by checking its version:
 
-```ruby
+```bash
 php -v
 ```
 
@@ -67,13 +65,13 @@ You'll be prompted to set a root password and answer a series of questions. Foll
 
 Next, create a database and user for OpenCart. Log in to the MariaDB console by running:
 
-```css
+```bash
 sudo mysql -u root -p
 ```
 
 Enter the root password you set earlier. Then execute the following commands to create a database and user for OpenCart:
 
-```sql
+```bash
 CREATE DATABASE opencart;
 CREATE USER 'opencartuser'@'localhost' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON opencart.* TO 'opencartuser'@'localhost';
@@ -105,7 +103,7 @@ sudo mv upload opencart
 
 Change the ownership of the 'opencart' directory to the Apache user:
 
-```kotlin
+```bash
 sudo chown -R www-data:www-data opencart
 ```
 
@@ -150,7 +148,7 @@ Paste the following configuration into the file, replacing 'your\_domain' with y
 
 Save and close the file. Then, disable the default Apache site and enable the OpenCart site:
 
-```arduino
+```bash
 sudo a2dissite 000-default
 sudo a2ensite opencart
 sudo systemctl restart apache2

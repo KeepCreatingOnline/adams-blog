@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import { unified } from 'unified';
+import { remarkParse } from 'remark-parse';
+import dynamic from 'next/dynamic';
 
-const Markdown = ({ content }) => {
-  return <ReactMarkdown remarkPlugins={[remarkGfm]} children={content} />;
-};
+const ReactMarkdown = dynamic(() => import('react-markdown'));
+const remarkGfm = dynamic(() => import('remark-gfm'));
 
-export default Markdown;
+export default function Markdown({ content }) {
+  const result = unified().use(remarkParse).use(remarkGfm).processSync(content);
+  const html = result.toString();
+
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+}

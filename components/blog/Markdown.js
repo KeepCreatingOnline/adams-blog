@@ -1,7 +1,7 @@
 import React from 'react';
 import { unified } from 'unified';
 import { remarkParse } from 'remark-parse';
-import dynamic from 'next/dynamic';
+import { remarkGfm } from 'remark-gfm'; // Use dynamic import here
 
 const ReactMarkdown = dynamic(() => import('react-markdown'));
 const remarkGfm = dynamic(() => import('remark-gfm'));

@@ -11,7 +11,11 @@
 const authors = {
     "adam-malin": {
         name: "Adam",
-        description: "Artist and Coder"
+        description: "Dad"
+    },
+    "jessica-malin": {
+        name: "Jess",
+        description: "Mom"
     }
 };
 

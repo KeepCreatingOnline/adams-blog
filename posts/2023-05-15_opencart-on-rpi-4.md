@@ -1,7 +1,7 @@
 ---
 title: Install OpenCart on Raspberry Pi 4 (8gb) 
 description: Host your own online shop with free and open-source software and a tiny computer
-categoryId: 'tech'
+categoryId: 'coding'
 authorId: 'adam'
 published: '2023-05-15'
 ---

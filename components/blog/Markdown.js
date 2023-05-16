@@ -1,17 +1,9 @@
 import React from 'react';
-import marked from 'marked';
-import Prism from 'prismjs';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const Markdown = ({ content }) => {
-  const renderer = new marked.Renderer();
-
-  renderer.image = (href, title, text) => {
-    return `<img src="${href}" alt="${text}" />`;
-  };
-
-  const markup = content ? marked(content, { renderer }) : '';
-
-  return <div dangerouslySetInnerHTML={{ __html: markup }} />;
+  return <ReactMarkdown remarkPlugins={[remarkGfm]} children={content} />;
 };
 
 export default Markdown;

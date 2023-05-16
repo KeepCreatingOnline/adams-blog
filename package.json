@@ -28,7 +28,7 @@
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
     "html-minifier": "^4.0.0",
-    "marked": "^3.0.4",
+    "marked": "^5.0.2",
     "next": "^12.0.1",
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
@@ -42,5 +42,9 @@
     "tailwindcss": "^2.0.2",
     "uglify-js": "^3.13.5",
     "validator": "^13.5.2"
+  },
+  "dependencies": {
+    "github-markdown-css": "^5.2.0",
+    "remark-react": "^9.0.1"
   }
 }

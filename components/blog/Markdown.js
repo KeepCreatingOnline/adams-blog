@@ -5,14 +5,8 @@ import Prism from 'prismjs';
 const Markdown = ({ content }) => {
   const renderer = new marked.Renderer();
 
-  renderer.code = (code, language) => {
-    const validLanguage = Prism.languages[language] ? language : 'markup';
-    const highlightedCode = Prism.highlight(
-      code,
-      Prism.languages[validLanguage],
-      validLanguage
-    );
-    return `<pre class="language-${validLanguage}"><code>${highlightedCode}</code></pre>`;
+  renderer.image = (href, title, text) => {
+    return `<img src="${href}" alt="${text}" />`;
   };
 
   const markup = content ? marked(content, { renderer }) : '';

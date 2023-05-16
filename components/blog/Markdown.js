@@ -11,15 +11,10 @@ const renderer = {
         return false; // return default if no caption
     },
     code(code, infostring, escaped) {
-    if (infostring && Prism.languages[infostring]) {
-        return `<pre><code class="language-${infostring}">${Prism.highlight(code, Prism.languages[infostring], infostring)}</code></pre>`;
-    }
-    // you may want to handle the case when language is not supported by Prism
-    else if (infostring && !Prism.languages[infostring]) {
-        console.warn(`Code block language "${infostring}" is not supported by Prism.`);
-        return `<pre><code class="language-${infostring}">${code}</code></pre>`;
-    }
-    return false; // or return default
+        if (infostring) {
+            return `<pre><code class="language-${infostring}">${Prism.highlight(code, Prism.languages[infostring], infostring)}</code></pre>`;
+        }
+        return false; // or return default
     },
     link(href, title, text) {
         // add target blank to external links

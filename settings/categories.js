@@ -9,18 +9,14 @@
 // if the blog doesn't need categories, empty the categories object e.g const categories = {};
 
 const categories = {
-    "coding": { 
-        name: "Coding",
-        description: "Coding Projects I'm working on or thinking about.",
+    "memories": { 
+        name: "Memories",
+        description: "Things we remember",
     },
-    "design": {
-        name: "Design",
-        description: "Graphic design projects that I'm working on or thinking about.",
+    "firsts": {
+        name: "Firsts",
+        description: "When you did something for the first time",
     },
-    "general": {
-        name: "General",
-        description: "Not anything in particular.",
-    }
 };
 
 export default categories;

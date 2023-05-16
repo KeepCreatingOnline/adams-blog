@@ -9,9 +9,13 @@
 // if the blog doesn't need authors, empty the authors object e.g const authors = {};
 
 const authors = {
-    "adam": {
+    "adam-malin": {
         name: "Adam",
-        description: "Full-time graphic designer at Oak Ridge National Laboratory, hobbyist coder, artist and proud father. Enjoys using and building on the web, and is a massive fan of Urbit and Bitcoin."
+        description: "Dad"
+    },
+    "jessica-malin": {
+        name: "Jess",
+        description: "Mom"
     }
 };
 

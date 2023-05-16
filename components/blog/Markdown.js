@@ -15,7 +15,7 @@ const Markdown = ({ content }) => {
     return `<pre class="language-${validLanguage}"><code>${highlightedCode}</code></pre>`;
   };
 
-  const markup = marked(content, { renderer });
+  const markup = content ? marked(content, { renderer }) : '';
 
   return <div dangerouslySetInnerHTML={{ __html: markup }} />;
 };

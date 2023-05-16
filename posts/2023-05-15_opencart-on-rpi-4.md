@@ -30,7 +30,7 @@ echo "deb [signed-by=/usr/share/keyrings/php-archive-keyring.gpg] https://packag
 sudo apt update
 ```
 
-```
+```bash
 sudo apt install apache2 -y
 sudo apt install mariadb-server -y
 sudo apt install php8.1 php8.1-mysql php8.1-gd php8.1-curl php8.1-xml php8.1-mbstring php8.1-zip libapache2-mod-php8.1 -y
@@ -44,7 +44,7 @@ php -v
 
 Restart the Apache service to apply the changes:
 
-```
+```bash
 sudo systemctl restart apache2
 ```
 
@@ -52,7 +52,7 @@ sudo systemctl restart apache2
 
 Secure and configure MariaDB after installation. Run the following command to secure your MariaDB installation:
 
-```
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -115,7 +115,7 @@ Configure Apache Create an Apache virtual host configuration for your OpenCart i
 
 Install PHP-FPM:
 
-```
+```bash
 sudo apt install php8.1-fpm -y
 ```
 
@@ -159,13 +159,13 @@ sudo systemctl restart php8.1-fpm
 
 Enable the Apache rewrite module, which is required by OpenCart:
 
-```
+```bash
 sudo a2enmod rewrite
 ```
 
 Finally, restart the Apache service to apply the changes:
 
-```
+```bash
 sudo systemctl restart apache2
 ```
 

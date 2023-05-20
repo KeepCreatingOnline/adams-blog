@@ -115,4 +115,4 @@ function List({category, author, posts, page, pages, path, ...props}) {
     );
 };
 
-export default List;
+export default List; 

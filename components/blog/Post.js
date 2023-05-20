@@ -7,6 +7,14 @@ import Main from '../Main';
 import PostData from './PostData';
 import { ChevronRight } from '../svg/Icons';
 
+// Assuming you have an authors object somewhere
+import authors from '../../settings/authors';
+
+function createAuthorLink(authorId) {
+  const authorName = authors[authorId]?.name || 'Unknown author';
+  return authorName;
+}
+
 function Post({ post }) {
   return (
     <Main

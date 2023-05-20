@@ -10,7 +10,7 @@ published: '2023-05-15'
 
 ### **Step 1: Update your system** Before installing any new software, update your system packages. Open a terminal on your Raspberry Pi and execute the following commands:
 
-```shell
+```bash
 sudo apt update
 sudo apt upgrade
 ```
@@ -23,14 +23,14 @@ To run OpenCart on your Raspberry Pi, you'll need to install a web server, a dat
 
 Add the PHP repository and update your package list:
 
-```shell
+```bash
 sudo apt-get install -y apt-transport-https lsb-release ca-certificates wget
 wget -qO - https://packages.sury.org/php/apt.gpg | sudo gpg --dearmor -o /usr/share/keyrings/php-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/php-archive-keyring.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
 sudo apt update
 ```
 
-```shell
+```bash
 sudo apt install apache2 -y
 sudo apt install mariadb-server -y
 sudo apt install php8.1 php8.1-mysql php8.1-gd php8.1-curl php8.1-xml php8.1-mbstring php8.1-zip libapache2-mod-php8.1 -y
@@ -38,13 +38,13 @@ sudo apt install php8.1 php8.1-mysql php8.1-gd php8.1-curl php8.1-xml php8.1-mbs
 
 Verify that PHP 8.1 is installed by checking its version:
 
-```shell
+```bash
 php -v
 ```
 
 Restart the Apache service to apply the changes:
 
-```shell
+```bash
 sudo systemctl restart apache2
 ```
 
@@ -52,7 +52,7 @@ sudo systemctl restart apache2
 
 Secure and configure MariaDB after installation. Run the following command to secure your MariaDB installation:
 
-```shell
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -67,13 +67,13 @@ You'll be prompted to set a root password and answer a series of questions. Foll
 
 Next, create a database and user for OpenCart. Log in to the MariaDB console by running:
 
-```shell
+```bash
 sudo mysql -u root -p
 ```
 
 Enter the root password you set earlier. Then execute the following commands to create a database and user for OpenCart:
 
-```shell
+```bash
 CREATE DATABASE opencart;
 CREATE USER 'opencartuser'@'localhost' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON opencart.* TO 'opencartuser'@'localhost';
@@ -87,7 +87,7 @@ Replace 'your\_password' with a strong password of your choice. Remember this da
 
 First, navigate to the `/var/www` directory and download the latest OpenCart release from their GitHub repository:
 
-```shell
+```bash
 cd /var/www
 sudo wget https://github.com/opencart/opencart/releases/download/4.0.2.1/opencart-4.0.2.1.zip
 ```
@@ -96,7 +96,7 @@ sudo wget https://github.com/opencart/opencart/releases/download/4.0.2.1/opencar
 
 Now, unzip the downloaded file and move the contents of the 'upload' directory to a new directory named 'opencart':
 
-```shell
+```bash
 sudo apt install unzip -y
 sudo unzip opencart-4.0.2.1.zip
 cd opencart-4.0.2.1
@@ -105,7 +105,7 @@ sudo mv upload opencart
 
 Change the ownership of the 'opencart' directory to the Apache user:
 
-```shell
+```bash
 sudo chown -R www-data:www-data opencart
 ```
 
@@ -115,20 +115,20 @@ Configure Apache Create an Apache virtual host configuration for your OpenCart i
 
 Install PHP-FPM:
 
-```shell
+```bash
 sudo apt install php8.1-fpm -y
 ```
 
 Enable the proxy\_fcgi and setenvif modules in Apache:
 
-```shell
+```bash
 sudo a2enmod proxy_fcgi setenvif
 sudo nano /etc/apache2/sites-available/opencart.conf
 ```
 
 Paste the following configuration into the file, replacing 'your\_domain' with your domain name or your Raspberry Pi's local IP address:
 
-```shell
+```bash
 <VirtualHost *:80>
     ServerName localhost
     DocumentRoot /var/www/opencart-4.0.2.1/opencart
@@ -150,7 +150,7 @@ Paste the following configuration into the file, replacing 'your\_domain' with y
 
 Save and close the file. Then, disable the default Apache site and enable the OpenCart site:
 
-```shell
+```bash
 sudo a2dissite 000-default
 sudo a2ensite opencart
 sudo systemctl restart apache2
@@ -159,19 +159,19 @@ sudo systemctl restart php8.1-fpm
 
 Enable the Apache rewrite module, which is required by OpenCart:
 
-```shell
+```bash
 sudo a2enmod rewrite
 ```
 
 Finally, restart the Apache service to apply the changes:
 
-```shell
+```bash
 sudo systemctl restart apache2
 ```
 
 Create and set the correct permissions for the config.php files:
 
-```shell
+```bash
 sudo touch /var/www/opencart-4.0.2.1/opencart/config.php
 sudo touch /var/www/opencart-4.0.2.1/opencart/admin/config.php
 sudo chown www-data:www-data /var/www/opencart-4.0.2.1/opencart/config.php
@@ -196,7 +196,7 @@ Enter the database connection details you created earlier:
 
 Fill out the administrative account details to create your OpenCart admin user. Click "Continue" to complete the installation process. After the installation is complete, you'll be prompted to delete the "install" directory. To do this, run the following command:
 
-```shell
+```bash
 sudo rm -rf /var/www/opencart/install
 ```
 

@@ -23,7 +23,7 @@ To run OpenCart on your Raspberry Pi, you'll need to install a web server, a dat
 
 Add the PHP repository and update your package list:
 
-```~~~~
+```
 sudo apt-get install -y apt-transport-https lsb-release ca-certificates wget
 wget -qO - https://packages.sury.org/php/apt.gpg | sudo gpg --dearmor -o /usr/share/keyrings/php-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/php-archive-keyring.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list

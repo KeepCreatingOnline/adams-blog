@@ -37,6 +37,34 @@ const categories = {
         name: "Fiction",
         description: "Stuff thats probably not real. Probably...",
     },
+      "linux": {
+        name: "Linux",
+        description: "My thoughts about the Linux operating system or ecosystem.",
+    },
+    "gaming": {
+        name: "Gaming",
+        description: "My opinions on games or gaming hardware.",
+    },
+    "ai": {
+        name: "AI",
+        description: "My opinions on Artificial Intelligence.",
+    },
+    "movies": {
+        name: "Movies",
+        description: "My opinions on Movies or the Film Industry.",
+    },
+    "tv": {
+        name: "TV Shows",
+        description: "My opinions on TV Shows or the TV Industry.",
+    },
+    "urbit": {
+        name: "Urbit",
+        description: "The future of the personal computer and the only network that makes any sense.",
+    },
+    "bitcoin": {
+        name: "Bitcoin",
+        description: "The only true money.",
+    },
     "art": {
         name: "Art",
         description: "All Nature is but Art, unknown to thee;",

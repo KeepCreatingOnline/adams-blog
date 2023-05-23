@@ -41,6 +41,10 @@ const categories = {
         name: "Linux",
         description: "My thoughts about the Linux operating system or ecosystem.",
     },
+    "self-hosted": {
+        name: "Self-Hosted",
+        description: "How and why I self-host as much as possible.",
+    },
     "gaming": {
         name: "Gaming",
         description: "My opinions on games or gaming hardware.",

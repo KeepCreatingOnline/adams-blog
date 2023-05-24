@@ -78,7 +78,7 @@ Now, when I talk about decentralization, I'm talking about systems that aren't c
 
 But it's not just about Bitcoin. There are other decentralized technologies out there that I'm excited about. One of them is Urbit, a decentralized computing platform that I believe has the potential to revolutionize the way we use the internet.
 
-As an Urbit Star owner/operator, I've had the opportunity to see firsthand the power of this technology. My personal Urbit ID is ~navluc-latmes and my Star ID is ~lanlyd, and let me tell you, it's been an incredible journey. Urbit is a "sound computer" that runs on top of "sound money" (Bitcoin), and I believe it's the future of computing.
+As an Urbit Star owner/operator, I've had the opportunity to see firsthand the power of this technology. My personal Urbit ID is ~navluc-latmes and my Star ID is ~lanlyd, and let me tell you, it's been an incredible journey. Urbit is a "sound computer" in the same way that Bitcoin is "sound money", and I believe it's the future of computing.
 
 Urbit is not just a platform; it's a whole new way of thinking about computing. It's about taking back control of our digital lives from big tech companies and putting it back in the hands of the users. It's about creating a digital world that's fair, transparent, and free from censorship and control. And it's about building a community of like-minded individuals who believe in the power of decentralization.
 

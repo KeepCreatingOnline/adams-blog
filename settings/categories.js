@@ -17,6 +17,10 @@ const categories = {
         name: "Coding",
         description: "Coding projects I am thinking about.",
     },
+    "open-source": {
+        name: "Open Source",
+        description: "Dissections of my favorite Open Source projects and software.",
+    },
     "design": {
         name: "Design",
         description: "Design topics that I'm thinking about.",

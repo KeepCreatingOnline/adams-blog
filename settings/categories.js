@@ -76,6 +76,10 @@ const categories = {
     "art": {
         name: "Art",
         description: "All Nature is but Art, unknown to thee;",
+    },
+    "philosophy": {
+        name: "Philosophy",
+        description: "from Greek: φιλοσοφία, philosophia, 'love of wisdom'",
     }
 };
 

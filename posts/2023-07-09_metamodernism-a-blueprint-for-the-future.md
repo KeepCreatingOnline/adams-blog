@@ -52,7 +52,7 @@ As a graphic designer in the metamodern era, I find myself torn between these tw
 
 The solution, I believe, lies in the synthesis offered by Metamodernism. Metamodernist design does not reject the past, but rather builds on it. It blends the simplicity of modern design with the vibrancy of postmodern aesthetics, creating something that is both familiar and fresh.
 
-The Metamodernist canvas is a space where contrasting ideas can coexist and inform each other. It is a space where the universal and the individual intersect, creating narratives that resonate on multiple levels. It is a space where design can play a role in building a more cohesive, inclusive society.
+The Metamodernist canvas is a space where contrasting ideas can coexist and inform each other. It is a space where the universal and the individual intersect, creating narratives that resonate on multiple levels. It is a space where design can play a role in building a more cohesive and well integrated society.
 
 The challenge for designers in the metamodern era is to create designs that reflect this complexity and nuance, designs that speak to both the individual and the collective, designs that challenge, inspire, and unite. It's a tall order, but it's a challenge that, as designers, we are ready and excited to embrace.
 

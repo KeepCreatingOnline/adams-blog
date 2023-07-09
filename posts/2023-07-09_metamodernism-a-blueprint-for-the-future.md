@@ -36,7 +36,7 @@ In recent years, we've seen political movements around the world that embody the
 
 A case in point is the political era marked by the rise of Donald Trump in the United States. Trump's slogan, "Make America Great Again," was a nod to the modernist ideal of a grand narrative - a return to American exceptionalism. It was an appeal to a past time when things were, as perceived by some, better.
 
-Meanwhile, reactions on the left have taken a different trajectory. Movements to decentralize power, break down traditional norms, and encourage more individual freedoms - such as recognizing the rights of the transgender community - echo postmodern sentiments. Yet these movements aren't simply about deconstruction; they also seek to construct new narratives and norms that are more inclusive and equitable.
+Meanwhile, reactions on the left have taken a different trajectory. Movements to decentralize power, break down traditional norms, and encourage more individual subjectivity echoing postmodern sentiments. 
 
 Metamodernism enables us to interpret these political movements from a fresh perspective. It does not discard the grand narrative nor does it plunge into fragmentation. Instead, it presents a narrative of balance and synthesis, oscillating between the modernist and postmodernist perspectives, and offering a way forward that is nuanced, respectful of individual experiences, and yet oriented toward a shared goal for the culture and people.
 

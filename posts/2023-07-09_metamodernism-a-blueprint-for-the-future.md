@@ -8,7 +8,11 @@ published: '2023-07-09'
 
 ![Metamodern](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/audio/metamodernism-a-blueprint-for-the-future/Metamodern.jpg)
 
+
+
 [Audio Version](https://soundcloud.com/user-653341896/metamodernism-a-blueprint-for-the-future)
+
+
 
 ## Introduction
 

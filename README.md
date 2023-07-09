@@ -1,3 +1,3 @@
-# A blog for my daughter Esther
+# My Personal Blog
 
-<3
+By Adam Malin.

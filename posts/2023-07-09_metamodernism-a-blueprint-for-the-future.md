@@ -90,7 +90,7 @@ But Bitcoin isn't just a fusion of modern and postmodern economics. It goes a st
 
 Moreover, Bitcoin is a grand narrative in itself - a vision of a world where economic power is not concentrated in the hands of a few, but distributed among many. At the same time, it acknowledges the individuality and diversity of its participants. Each Bitcoin user has a unique address and can transact freely with anyone in the world, without the need for a middleman.
 
-Bitcoin;s rise offers a glimpse into what a Metamodernist economic system might look like - one that combines the best aspects of modern and postmodern economics, while also adding a new layer of trust, cooperation, and individual freedom.
+Bitcoin's rise offers a glimpse into what a Metamodernist economic system might look like - one that combines the best aspects of modern and postmodern economics, while also adding a new layer of trust, cooperation, and individual freedom.
 
 ### **The Impact of Urbit and Metamodernist Computing**
 

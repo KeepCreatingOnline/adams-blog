@@ -8,7 +8,7 @@ published: '2023-07-09'
 
 ## Introduction
 
-[Audio Link](https://github.com/KeepCreatingOnline/adams-blog/raw/main/audio/metamodernism-a-blueprint-for-the-future/1-intro.mp3)
+[Audio Link]()
 
 Welcome to the metamodern era. A time where we find ourselves caught in the flux of digital revolution, cultural shifts, and a rekindling of grand narratives, all while still acknowledging and respecting the individual human experience.
 
@@ -22,7 +22,7 @@ So let's embark on this journey together to understand the metamodern era and it
 
 ## **Understanding Postmodernism and Metamodernism**
 
-[Audio Link](https://github.com/KeepCreatingOnline/adams-blog/raw/main/audio/metamodernism-a-blueprint-for-the-future/2-Understanding%20Postmodernism%20and%20Metamodernism.mp3)
+[Audio Link]()
 
 To appreciate the metamodern, we must first unpack the concept of postmodernism. Rooted in skepticism, postmodernism came into being as a reaction to modernism’s perceived failures. Where modernism sought universality, believing in grand narratives and objective truths, postmodernism reveled in fragmentation and the subjective nature of reality. It questioned our institutions, our ideologies, and our grand narratives, challenging the very structure upon which our society was built.
 
@@ -50,7 +50,7 @@ In the realm of politics, the metamodern era isn't about swinging to one extreme
 
 ### **The Metamodernist Canvas in Graphic Design**
 
-[Audio Link](https://github.com/KeepCreatingOnline/adams-blog/raw/main/audio/metamodernism-a-blueprint-for-the-future/3-The%20Metamodernist%20Canvas%20in%20Graphic%20Design.mp3)
+[Audio Link]()
 
 Now, let's look at the impact of Metamodernism on graphic design, a realm where I live and breathe every day. Here, Metamodernism offers a fresh perspective, providing a way to express the complexity of the world we live in and creating a narrative that is both universal and individual.
 

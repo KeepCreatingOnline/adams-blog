@@ -94,15 +94,17 @@ Bitcoin's rise offers a glimpse into what a Metamodernist economic system might 
 
 ### **The Impact of Urbit and Metamodernist Computing**
 
-Urbit represents another fascinating intersection of Metamodernist thinking and technology. As an operating system, Urbit seeks to redefine the relationship between individuals and the digital world, aligning closely with the principles of Metamodernism.
+Urbit symbolizes a compelling manifestation of Metamodernist ideology within the realm of technology. This unique operating system revolutionizes the individual's interaction with the digital world, intrinsically mirroring the principles of Metamodernism.
 
-Urbit’s design philosophy resists the postmodern complexities of present-day internet, characterized by surveillance capitalism, loss of privacy, and the centralization of data. Instead, it gravitates towards a modernist ideal of the internet as a simple, intuitive tool, but it also envisions something novel: a digital landscape where each individual has complete ownership and control of their virtual identity and data.
+In contrast to the postmodern complexities that plague the current internet – a web characterized by surveillance capitalism, privacy invasion, and data centralization – Urbit leans towards a modernist vision. It champions the idea of the internet as a streamlined, intuitive tool, but concurrently it envisions something unprecedented: a digital landscape where each user not only owns but is also the infrastructure of their digital identity and data.
 
-Much like Metamodernist philosophy, Urbit oscillates between past and future, known and unknown, familiarity and novelty. It adopts the modernist simplicity of early computing, yet pushes for a futuristic vision of a personal server for each individual, wherein they retain full autonomy over their digital lives.
+The design philosophy of Urbit embodies a characteristic Metamodernist oscillation, as it traverses between elements of the past and the future, the familiar and the uncharted. It embraces the modernist simplicity reminiscent of early computing while concurrently advancing a futuristic concept of a personal server for every individual, in which they possess full sovereignty over their digital existence.
 
-In a Metamodernist context, Urbit can be seen as a grand narrative of a decentralized, user-centric digital future. At the same time, it acknowledges the individuality of each user, reinforcing their control over their digital presence and interactions.
+Urbit’s operating system and its unique programming language, Nock and Hoon, employ a Kelvin versioning system. This system is designed to decrement towards zero instead of incrementing upwards, epitomizing the modernist pursuit of perfection and simplicity. Once the protocol reaches zero, it signifies that an ideal state has been achieved, and no further changes will be required. This, in essence, represents the modernist grand narrative embedded within Urbit's design.
 
-Urbit, like Bitcoin, is not without controversies and skepticism. Its promise of a completely decentralized internet is yet to be fully realized. However, its vision provides an important perspective on how Metamodernist principles can help shape our digital future, with a balance between grand narratives and individual nuances, between a collective digital dream and personal digital realities.
+In the wider narrative of Metamodernism, Urbit symbolizes a decentralized, user-centric digital future. It recognizes the individuality of each user and emphasizes their control over their digital persona and interactions.
+
+The promise of a completely decentralized internet is a vision still in progress. Regardless, it offers crucial insights into how Metamodernist principles could potentially shape our digital future. It paints a picture of an equilibrium between grand narratives and individual nuances, encapsulating a collective digital aspiration, as well as personal digital realities.
 
 ### **Moving Towards a Metamodernist Future**
 

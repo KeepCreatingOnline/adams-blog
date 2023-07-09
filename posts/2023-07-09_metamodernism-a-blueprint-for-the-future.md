@@ -6,13 +6,13 @@ authorId: 'adam'
 published: '2023-07-09'
 ---
 
-![Metamodern](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/images/Metamodern.jpg)
+![Metamodern](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/audio/metamodernism-a-blueprint-for-the-future/Metamodern.jpg)
 
 [Audio Version](https://soundcloud.com/user-653341896/metamodernism-a-blueprint-for-the-future)
 
 ## Introduction
 
-Welcome to the metamodern era. A time where we find ourselves caught in the flux of digital revolution, cultural shifts, and a rekindling of grand narratives, all while still acknowledging and respecting the individual human experience.
+Welcome to the metamodern era. A time where we find ourselves caught in the flux of digital revolution, cultural shifts, and a rekindling of grand narratives, all while still 
 
 As an artist, I find myself standing at the crossroads of these cultural and technological shifts, with Metamodernism serving as my compass. I'd like to share my thoughts, experiences, and observations on what Metamodernism is, and how I believe it will shape our future.
 

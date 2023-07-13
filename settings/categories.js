@@ -80,6 +80,10 @@ const categories = {
     "philosophy": {
         name: "Philosophy",
         description: "from Greek: φιλοσοφία, philosophia, 'love of wisdom'",
+    },
+    "science": {
+        name: "Science",
+        description: "from Greek: ἐπιστήμη, science, 'meaning knowledge'",
     }
 };
 

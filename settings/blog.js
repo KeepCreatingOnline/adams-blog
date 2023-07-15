@@ -1,7 +1,7 @@
 // this is the root domain or subdomain that the live blog will be hosted on
 // this info is needed for the LD-JSON post data and the RSS feed
 // e.g. "https://www.yourdomain.com" or "https://blog.yourdomain.com"
-export const blogDomain = "https://blog.adammalin.com";
+export const blogDomain = "https://habitus.blog/";
 
 // blog location - use "" for no subdirectory or "/blog" for blog subdirectory
 // personally I prefer to use the "/blog" subdirectory so that I can have other stuff on the site
@@ -12,7 +12,7 @@ export const blogDomain = "https://blog.adammalin.com";
 export const blogPath = "";
 
 // this could be the business, website or the person
-export const blogBy = "Adam Malin";
+export const blogBy = "habitus.blog";
 
 // The name of the blog
 export const blogName = "Habitus Ordinis Mutatio";
@@ -21,7 +21,7 @@ export const blogName = "Habitus Ordinis Mutatio";
 export const blogLogoURL = false;
 
 // Description for visitors to the blog (you can use markup)
-export const blogDescription = "Notes and things that come from my head, as well as other places I find interesting."
+export const blogDescription = "Notes and things that come from the brain of Adam Malin, as well as other places I find interesting."
 
 // Description that will display in search engines (use plain text only)
 // This is optional, but if you used markup in your description, include a plain text description here for SEO

@@ -38,3 +38,16 @@ This theory raises some thought-provoking questions. For instance, have we misin
 - [J. W. Moffat, “Variable Speed of Light Cosmology: An Alternative to Inflation,” International Journal of Modern Physics D, vol. 12, no. 07, pp. 1279–1314, 2003. - Proposes varying c cosmology compatible with relativity.](https://arxiv.org/abs/hep-th/0208122)
 
 - [A. Albrecht and J. Magueijo, “A time varying speed of light as a solution to cosmological puzzles,” Physical Review D, vol. 59, no. 4, p. 043516, 1999. - Outlines how theories of quantum gravity predict c variations and preserves causality.](https://arxiv.org/abs/astro-ph/9811018)
+
+
+> *Adam Malin*
+> 
+> [adammalin.com](https://adammalin.com)
+> 
+> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> 
+> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> 
+>  
+> **value4value**
+> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

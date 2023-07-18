@@ -78,3 +78,16 @@ This provides a cautionary perspective on modern society’s faith in perpetual 
 Through groundbreaking theories like simulation, hyperreality and symbolic exchange, Jean Baudrillard provided deep critiques of modern society, consumer culture, media and technology. His work dismantles assumptions about reality, history and human agency vs. systemic control. 
 
 Baudrillard prompts critical reflection about the cultural, psychological and philosophical implications of postmodern society. His lasting influence encourages re-examining our relationships with consumerism, technology and media to navigate the complex intricacies of the contemporary world.
+
+
+> *Adam Malin*
+> 
+> [adammalin.com](https://adammalin.com)
+> 
+> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> 
+> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> 
+>  
+> **value4value**
+> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

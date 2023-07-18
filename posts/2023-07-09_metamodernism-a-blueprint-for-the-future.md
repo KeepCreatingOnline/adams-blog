@@ -139,3 +139,16 @@ In the political realm, Metamodernism can help create a dialogue that is both en
 In essence, the potential of Metamodernism lies in its capacity to weave a compelling tapestry of our collective human experience – one that is vibrant, complex, and teeming with diverse narratives. By understanding and embracing the principles of Metamodernism, we can co-create a future that truly reflects the dynamic interplay of our shared narratives and individual nuances.
 
 In this promising future, we can all become active participants in the Metamodernist narrative, shaping a world that values both the grandeur of our collective dreams and the authenticity of our individual experiences. The future is not just something we move towards; it is something we actively create. And Metamodernism provides a powerful blueprint for this creation.
+
+
+> *Adam Malin*
+> 
+> [adammalin.com](https://adammalin.com)
+> 
+> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> 
+> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> 
+>  
+> **value4value**
+> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

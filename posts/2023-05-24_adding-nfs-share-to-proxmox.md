@@ -43,3 +43,16 @@ After you've filled in all the details, click "Add". This will save your NFS sto
 Your new NFS storage should now appear in the list of available storage on your Proxmox web interface. You can verify everything is working by creating a VM and choosing your new NFS storage as the disk image destination.
 
 Keep in mind, for this to work, your Synology NAS must have NFS services enabled and the appropriate permissions set for the Proxmox server to access it. Happy virtualizing!
+
+
+> *Adam Malin*
+> 
+> [adammalin.com](https://adammalin.com)
+> 
+> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> 
+> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> 
+>  
+> **value4value**
+> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

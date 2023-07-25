@@ -81,6 +81,10 @@ const categories = {
         name: "Philosophy",
         description: "from Greek: φιλοσοφία, philosophia, 'love of wisdom'",
     },
+    "concepts": {
+        name: "Concepts",
+        description: "Thing's that don't exist yet but totally should.",
+    },
     "science": {
         name: "Science",
         description: "from Greek: ἐπιστήμη, science, 'meaning knowledge'",

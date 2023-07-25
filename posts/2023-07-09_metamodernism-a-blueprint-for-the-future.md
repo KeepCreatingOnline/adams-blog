@@ -8,11 +8,7 @@ published: '2023-07-09'
 
 ![Metamodern](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/audio/metamodernism-a-blueprint-for-the-future/Metamodern.jpg)
 
-
-
 [Audio Version](https://soundcloud.com/user-653341896/metamodernism-a-blueprint-for-the-future)
-
-
 
 ## Introduction
 
@@ -140,7 +136,6 @@ In essence, the potential of Metamodernism lies in its capacity to weave a compe
 
 In this promising future, we can all become active participants in the Metamodernist narrative, shaping a world that values both the grandeur of our collective dreams and the authenticity of our individual experiences. The future is not just something we move towards; it is something we actively create. And Metamodernism provides a powerful blueprint for this creation.
 
-
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)
@@ -149,6 +144,5 @@ In this promising future, we can all become active participants in the Metamoder
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
 > 
->  
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

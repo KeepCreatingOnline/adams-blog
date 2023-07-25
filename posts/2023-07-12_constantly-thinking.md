@@ -39,7 +39,6 @@ This theory raises some thought-provoking questions. For instance, have we misin
 
 - [A. Albrecht and J. Magueijo, “A time varying speed of light as a solution to cosmological puzzles,” Physical Review D, vol. 59, no. 4, p. 043516, 1999. - Outlines how theories of quantum gravity predict c variations and preserves causality.](https://arxiv.org/abs/astro-ph/9811018)
 
-
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)
@@ -48,6 +47,5 @@ This theory raises some thought-provoking questions. For instance, have we misin
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
 > 
->  
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

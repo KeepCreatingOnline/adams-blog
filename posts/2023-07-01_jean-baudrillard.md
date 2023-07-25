@@ -8,10 +8,7 @@ published: '2023-07-01'
 
 [Audio Version](https://soundcloud.com/user-653341896/jean-baudrillard)
 
-
-
 ![](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/audio/jean-baudrillard/jean-baudrillard.png)
-
 
 The French sociologist and philosopher Jean Baudrillard offered profound critiques of modern society, technology, media and consumer culture through his work. Often associated with postmodernism and post-structuralism, Baudrillard challenged established notions of truth, reality and the power dynamics between humans and the systems they create.
 
@@ -79,7 +76,6 @@ Through groundbreaking theories like simulation, hyperreality and symbolic excha
 
 Baudrillard prompts critical reflection about the cultural, psychological and philosophical implications of postmodern society. His lasting influence encourages re-examining our relationships with consumerism, technology and media to navigate the complex intricacies of the contemporary world.
 
-
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)
@@ -88,6 +84,5 @@ Baudrillard prompts critical reflection about the cultural, psychological and ph
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
 > 
->  
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

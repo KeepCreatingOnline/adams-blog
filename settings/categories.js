@@ -85,6 +85,10 @@ const categories = {
         name: "Concepts",
         description: "Thing's that don't exist yet but totally should.",
     },
+    "security": {
+        name: "Security",
+        description: "Be more than sheeple.",
+    },
     "science": {
         name: "Science",
         description: "from Greek: ἐπιστήμη, science, 'meaning knowledge'",

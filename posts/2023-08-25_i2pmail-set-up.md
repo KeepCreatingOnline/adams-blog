@@ -1,12 +1,12 @@
 ---
 title: How to Set Up i2pMail for Use with Thunderbird and K9mail | A Secure and Free Email
 description: In this blog post, I walk you through setting up i2pMail on Thunderbird and K9mail. I also discuss the advantages of i2pMail and why its really secure when you're emailing other @mail.i2p addresses.
-categoryId: 'Security'
+categoryId: 'security'
 authorId: 'adam'
 published: '2023-08-25'
 ---
 
-![Metamodern](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/audio/i2pmail-setup/i2pmail.png)
+![](https://raw.githubusercontent.com/KeepCreatingOnline/adams-blog/main/audio/i2pmail-setup/i2pmail.png)
 
 [Audio Version Coming Soon]()
 

@@ -419,6 +419,117 @@ sudo systemctl restart minetest-server
 
 Keep in mind that while Mineclone2 aims to replicate Minecraft's gameplay within the Minetest engine, there may be some differences or features that are not exactly like Minecraft due to the limitations or differences in the engine or the Mineclone2 implementation.
 
+
+
+# Admin Commands
+
+
+
+Having a grasp of the admin commands in Minetest (especially when running MineClone 2) can be very beneficial for managing a server effectively. Here's a list of commonly used admin commands:
+
+1. **Granting and Revoking Privileges:**
+   
+   - `/grant <playername> <privilege>`: Grants a specified privilege to a player.
+   - `/revoke <playername> <privilege>`: Revokes a specified privilege from a player.
+
+2. **Teleportation:**
+   
+   - `/teleport <X,Y,Z>`: Teleports you to the specified coordinates.
+   - `/teleport <playername> <X,Y,Z>`: Teleports the specified player to the specified coordinates.
+   - `/teleport <playername1> <playername2>`: Teleports player1 to player2's position.
+
+3. **Giving Items:**
+   
+   - `/give <playername> <itemstring> [<count>]`: Gives the specified item to a player. You can also specify the quantity.
+
+4. **Time and Weather:**
+   
+   - `/time <time>`: Sets the time of day. (e.g., `/time 6000` for midday)
+   - `/weather <weather>`: Sets the weather (e.g., `/weather rain` to set the weather to rain).
+
+5. **Server Management:**
+   
+   - `/kick <playername>`: Kicks a player from the server.
+   - `/ban <playername>`: Bans a player from the server.
+   - `/unban <playername>`: Unbans a player from the server.
+
+6. **Clearing Objects:**
+   
+   - `/clearobjects`: Clears all objects in the world. Be cautious as this can't be undone.
+
+7. **Purging and Removing Players:**
+   
+   - `/clearinv <playername>`: Clears a player's inventory.
+   - `/remove_player <playername>`: Removes a player's data from the server.
+
+8. **Information Commands:**
+   
+   - `/status`: Displays server status information.
+   - `/privs <playername>`: Displays the privileges of a specified player.
+
+9. **World Management:**
+   
+   - `/set <name> <value>`: Sets a server configuration setting.
+   - `/deleteblocks <X1,Y1,Z1> <X2,Y2,Z2>`: Deletes all blocks in the specified area.
+
+10. **Chat and Communication:**
+    
+    - `/me <action>`: Sends an action message to the chat. (e.g., `/me jumps` will display "*<playername> jumps")
+    - `/msg <playername> <message>`: Sends a private message to a specified player.
+
+These commands should give you a good degree of control over your server and help in managing players and game settings. Make sure to replace placeholders like `<playername>`, `<X,Y,Z>`, `<itemstring>`, `<count>`, `<time>`, `<weather>`, `<name>`, and `<value>` with actual values or player names when using these commands.
+
+
+
+# Admin Fly
+
+
+
+In Minetest and MineClone 2, the `fly` privilege allows players to fly around the world, which can be extremely useful for admins and moderators for overseeing and managing the server. Here's how you can use and manage the `fly` privilege:
+
+### Enabling Fly Mode:
+
+1. **Granting Fly Privilege:**
+   
+   - If you're an admin, you can grant the `fly` privilege to yourself or other players using the following command:
+     
+     ```
+     /grant <playername> fly
+     ```
+     
+     Replace `<playername>` with the username of the player you want to grant the privilege to.
+
+2. **Activating Fly Mode:**
+   
+   - Once the `fly` privilege has been granted, the player can toggle fly mode on and off by pressing the `K` key (by default). This can be changed in the settings under "Change Keys".
+
+### Disabling Fly Mode:
+
+1. **Revoking Fly Privilege:**
+   - If you need to revoke the `fly` privilege from a player, you can use the following command:
+     
+     ```
+     /revoke <playername> fly
+     ```
+
+### Checking Fly Privilege:
+
+1. **Checking Privileges:**
+   - You can check the privileges of a player using the following command:
+     
+     ```
+     /privs <playername>
+     ```
+
+### Tips:
+
+- The `fly` privilege is very powerful and can potentially be abused, so it's typically reserved for trusted players, admins, and moderators.
+- While in fly mode, players can move up by pressing the jump key (space by default) and move down by pressing the sneak key (shift by default).
+
+These commands and tips should help you manage the `fly` privilege on your server effectively.
+
+
+
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)

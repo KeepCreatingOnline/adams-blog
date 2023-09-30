@@ -106,7 +106,7 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
    - First, find the version of MineClone2 compatible with your Minetest version. You can see the installed version of Minetest by running:
      
      ```
-     minetest-server --version
+     /usr/lib/minetest/minetestserver --version
      ```
    
    - Refer to the [MineClone2 forum post](https://forum.minetest.net/viewtopic.php?t=16407) for finding your compatible version.

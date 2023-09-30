@@ -66,17 +66,21 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
         ```
         sudo nano /etc/minetest/minetest.conf
         ```
+      
       - Add or modify the following line, replacing `<your-username>` with your username:
         
         ```
         name = <your-username>
         ```
+      
       - Add the following line to grant all privileges to your username:
         
         ```
         initial_privs = all
         ```
+      
       - Save and close the file (in nano, press `Ctrl + X` to close, press `Y` to confirm changes, and press `Enter` to save).
+      
       - Restart your Minetest server to apply the changes:
         
         ```
@@ -86,26 +90,16 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
    2. **Via Server Command Line**:
       
       - If your server has a command line interface (CLI), you can grant privileges directly from there.
+      
       - Access the server CLI, and type the following command, replacing `<your-username>` with your username:
         
         ```
         /grant <your-username> all
         ```
    
-   3. **Via `auth.txt` File** (if applicable):
-      
-      - Some Minetest server setups use an `auth.txt` file to manage user privileges.
-      - Locate and open the `auth.txt` file in your Minetest server's main directory.
-      - Add a new line with the following format, replacing `<your-username>` with your username:
-        
-        ```
-        <your-username>;password_hash;all
-        ```
-      - Save and close the file, then restart your Minetest server to apply the changes.
+   3. 
    
    After following one of the above methods, you should have all privileges on your Minetest server. Connect to your server again and check your privileges using the `/privs` command in the game's chat/command interface.
-   
-   
 
 5. **Install MineClone2**:
    

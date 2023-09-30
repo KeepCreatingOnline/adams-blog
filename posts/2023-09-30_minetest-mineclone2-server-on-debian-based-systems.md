@@ -66,6 +66,12 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
      ```
    
    - Refer to the [MineClone2 forum post](https://forum.minetest.net/viewtopic.php?t=16407) for finding your compatible version.
+     
+   
+   [Here]([https://git.minetest.land/MineClone2/MineClone2) is the GitTea code repository.
+   
+   [Here](https://github.com/MineClone2/MineClone2) is the mirror GitHub repository. 
+   
    
    - Download the compatible version of MineClone2 using `wget`:
      

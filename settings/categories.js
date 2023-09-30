@@ -34,6 +34,10 @@ const categories = {
         name: "Urbit",
         description: "The future of the personal computer and the only network that makes any sense.",
     },
+    "gaming": {
+        name: "Gaming",
+        description: "Because sometimes you just need to relax and play a game.",
+    },
     "bitcoin": {
         name: "Bitcoin",
         description: "The only true money.",

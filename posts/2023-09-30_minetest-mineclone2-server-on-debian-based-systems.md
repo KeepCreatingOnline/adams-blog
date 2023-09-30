@@ -263,8 +263,6 @@ Here are additional sections on how to backup the server's game world and how to
 
 These steps should help you in safely backing up your game world and updating Minetest and Mineclone2 to newer versions while keeping your world intact.
 
-
-
 ---
 
 ### Regenerating a New World and Using a Specific Seed
@@ -274,44 +272,45 @@ If you're not satisfied with the auto-generated world in your Minetest server, y
 1. **Stop Your Minetest Server**:
    Before making changes to your world, ensure that your Minetest server is stopped to prevent any data corruption.
    
-   ```bash
+   ```
    sudo systemctl stop minetest-server
    ```
 
 2. **Backup Your Current World** (Optional):
    If you have any data in your current world that you want to keep, it's a good idea to create a backup before proceeding.
    
-   ```bash
+   ```
    sudo cp -r /var/games/minetest-server/.minetest/worlds/world /path/to/backup/directory
    ```
 
 3. **Delete Your Current World**:
    Delete the current world directory to make way for the new world.
    
-   ```bash
+   ```
    sudo rm -rf /var/games/minetest-server/.minetest/worlds/world
    ```
 
 4. **Edit Your Minetest Configuration**:
    Open the Minetest configuration file to specify a seed or leave it blank for a random new world.
    
-   ```bash
+   ```
    sudo nano /etc/minetest/minetest.conf
    ```
    
    - To use a specific seed, add or modify the following line:
      
-     ```plaintext
+     ```
      fixed_map_seed = your_desired_seed
      ```
      
      Replace `your_desired_seed` with the seed you want to use.
+   
    - To generate a random new world, either omit the `fixed_map_seed` line or leave it blank.
 
 5. **Start Your Minetest Server**:
    Start your Minetest server again to generate the new world.
    
-   ```bash
+   ```
    sudo systemctl start minetest-server
    ```
 
@@ -329,11 +328,7 @@ By following these steps, you can regenerate a new world or use a specific seed 
 
 This section provides a step-by-step guide on how to regenerate a new world and how to use a specific seed for world generation in your Minetest server running Mineclone2.
 
-
-
 # Make Your New Mineclone2 Server Play More Like Vanilla Minecraft
-
-
 
 To make your Mineclone2 server as much like Minecraft as possible, you may need to adjust several settings within the Minetest configuration file (`minetest.conf`). Mineclone2 is designed to mimic Minecraft's gameplay and mechanics, but there might be some settings you can tweak to get a closer experience. Here are some suggestions:
 
@@ -341,7 +336,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - Ensure that the `enable_damage` setting is true to have a survival gameplay experience similar to Minecraft.
      
-     ```plaintext
+     ```
      enable_damage = true
      ```
 
@@ -349,7 +344,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - Set the default privileges for new players to mimic Minecraft's default permissions.
      
-     ```plaintext
+     ```
      default_privs = interact, shout
      ```
 
@@ -357,7 +352,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - You can tweak map generation settings to get a world generation closer to Minecraft's. Some of these settings include:
      
-     ```plaintext
+     ```
      mg_name = v7
      water_level = 1
      ```
@@ -366,7 +361,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - If you want to allow player versus player combat, ensure that PvP is enabled.
      
-     ```plaintext
+     ```
      enable_pvp = true
      ```
 
@@ -374,7 +369,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - Adjust player settings to match Minecraft's player mechanics.
      
-     ```plaintext
+     ```
      player_backend = sqlite3
      player_transfer_distance = 0
      ```
@@ -391,7 +386,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - Set a server description and name that reflects the Minecraft-like experience you are providing.
      
-     ```plaintext
+     ```
      server_description = Minecraft-like Mineclone2 Server
      server_name = Mineclone2 Server
      ```
@@ -400,7 +395,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
    
    - If you prefer a creative gameplay experience, you can enable creative mode.
      
-     ```plaintext
+     ```
      creative_mode = false
      ```
 
@@ -408,7 +403,7 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
     
     - Set a static spawn point similar to Minecraft's spawn behavior.
       
-      ```plaintext
+      ```
       static_spawnpoint = (0,0,0)
       ```
 
@@ -418,13 +413,11 @@ To make your Mineclone2 server as much like Minecraft as possible, you may need 
 
 These adjustments can help make your Mineclone2 server feel more like a traditional Minecraft server. Remember to restart your Minetest server after making changes to the configuration file to apply the new settings:
 
-```bash
+```
 sudo systemctl restart minetest-server
 ```
 
 Keep in mind that while Mineclone2 aims to replicate Minecraft's gameplay within the Minetest engine, there may be some differences or features that are not exactly like Minecraft due to the limitations or differences in the engine or the Mineclone2 implementation.
-
-
 
 > *Adam Malin*
 > 

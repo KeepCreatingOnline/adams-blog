@@ -110,6 +110,8 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
      ```
    
    - Refer to the [MineClone2 forum post](https://forum.minetest.net/viewtopic.php?t=16407) for finding your compatible version.
+   
+   Right-click on the appropriate link and select "copy link".
 
 Download the compatible version of MineClone2 using `wget`:
 
@@ -117,11 +119,22 @@ Download the compatible version of MineClone2 using `wget`:
   wget [compatible_version_link]
   ```
 
-- Unzip the downloaded file and move the folder to the game's directory:
+- Use the `ls` command to see the name of the zip you have downloaded.
   
   ```
-  unzip mineclone2.zip
-  sudo mv mineclone2 /var/games/minetest-server/.minetest/games
+  unzip [file-name].zip
+  ```
+  
+  If you get an error like `-bash: unzip: command not found` you can use the following command to install unzip:
+  
+  ```
+  sudo apt-get install unzip
+  ```
+  
+  Unzip the downloaded file and move the folder to the game's directory:
+  
+  ```
+  sudo mv ~/mineclone2 /var/games/minetest-server/.minetest/games/
   ```
 
 - If the directory doesn't exist, create it and run the move command again.

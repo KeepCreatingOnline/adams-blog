@@ -1,7 +1,7 @@
 ---
 title: How to SSH Into a Debian Server Running on Proxmox
 description: Proxmox Tricks
-categoryId: 'coding'
+categoryId: 'proxmox'
 authorId: 'adam'
 published: '2023-09-30'
 ---
@@ -61,8 +61,6 @@ ssh-copy-id username@server_ip_address
 - Now you should be able to SSH into your server without being prompted for a password.
 
 Now, you should be connected to your local network server via SSH on your Debian system.
-
-
 
 > *Adam Malin*
 > 

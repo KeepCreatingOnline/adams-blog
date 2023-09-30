@@ -13,9 +13,9 @@ const categories = {
         name: "Tech",
         description: "Cool tech I like.",
     },
-    "coding": {
-        name: "Coding",
-        description: "Coding projects I am thinking about.",
+    "proxmox": {
+        name: "Proxmox",
+        description: "Proxmox tips and projects I am thinking about.",
     },
     "open-source": {
         name: "Open Source",

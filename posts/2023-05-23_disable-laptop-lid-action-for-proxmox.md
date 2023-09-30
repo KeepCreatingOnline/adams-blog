@@ -1,7 +1,7 @@
 ---
 title: Disable Laptop Lid Action for Proxmox 
 description: Disable Laptop Lid Action for Proxmox
-categoryId: 'tech'
+categoryId: 'proxmox'
 authorId: 'adam'
 published: '2023-05-23'
 ---
@@ -31,7 +31,6 @@ restart the logind service.
 systemctl restart systemd-logind.service
 ```
 
-
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)
@@ -40,6 +39,5 @@ systemctl restart systemd-logind.service
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
 > 
->  
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

@@ -1,7 +1,7 @@
 ---
 title: Install OpenCart on Raspberry Pi 4 (8gb) 
 description: Host your own online shop with free and open-source software and a tiny computer
-categoryId: 'coding'
+categoryId: 'self-host'
 authorId: 'adam'
 published: '2023-05-15'
 ---
@@ -202,7 +202,6 @@ sudo rm -rf /var/www/opencart/install
 
 Now, you should be able to access the OpenCart admin panel using the admin account you created during the installation process. That's it! You have successfully installed OpenCart on your Raspberry Pi running Raspberry Pi OS Lite (64bit).
 
-
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)
@@ -211,6 +210,5 @@ Now, you should be able to access the OpenCart admin panel using the admin accou
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
 > 
->  
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

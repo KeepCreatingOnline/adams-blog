@@ -1,7 +1,7 @@
 ---
 title: How to Edit the Sources List in Debian
 description: Proxmox Tricks
-categoryId: 'coding'
+categoryId: 'proxmox'
 authorId: 'adam'
 published: '2023-09-30'
 ---
@@ -42,8 +42,6 @@ Here's how you can remove the CD-ROM source:
    ```
 
 This should stop your system from asking for the CD-ROM when installing software or updating the package database.
-
-
 
 > *Adam Malin*
 > 

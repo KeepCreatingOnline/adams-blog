@@ -1,7 +1,7 @@
 ---
 title: Step-by-Step Guide | Adding an NFS Share from Synology NAS to Proxmox 
 description: Dive into our comprehensive guide where we explore how to effectively configure and add an NFS Share from a Synology NAS to your Proxmox virtualization platform. Whether you're new to Proxmox or looking to expand your storage options, we'll walk you through each step with clear instructions and crucial considerations, ensuring your setup process is smooth and successful.
-categoryId: 'coding'
+categoryId: 'proxmox'
 authorId: 'adam'
 published: '2023-05-24'
 ---
@@ -44,7 +44,6 @@ Your new NFS storage should now appear in the list of available storage on your 
 
 Keep in mind, for this to work, your Synology NAS must have NFS services enabled and the appropriate permissions set for the Proxmox server to access it. Happy virtualizing!
 
-
 > *Adam Malin*
 > 
 > [adammalin.com](https://adammalin.com)
@@ -53,6 +52,5 @@ Keep in mind, for this to work, your Synology NAS must have NFS services enabled
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
 > 
->  
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

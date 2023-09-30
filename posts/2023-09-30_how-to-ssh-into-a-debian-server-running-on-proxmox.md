@@ -1,6 +1,6 @@
 ---
 title: How to SSH Into a Debian Server Running on Proxmox
-description: 
+description: Proxmox Tricks
 categoryId: 'coding'
 authorId: 'adam'
 published: '2023-09-30'
@@ -12,7 +12,7 @@ Connecting to a local network server via SSH on a Debian system is a straightfor
 
    First, ensure that you have the SSH client installed on your Debian machine. If it's not installed, you can install it using the following command:
 
-```bash
+```
 sudo apt-get install openssh-client
 ```
 
@@ -20,7 +20,7 @@ sudo apt-get install openssh-client
 
    Next, you need to find out the IP address of the server you want to connect to. If you have access to the server, you can usually find the IP address by running the following command on the server:
 
-```bash
+```
 ip addr show
 ```
 
@@ -30,13 +30,13 @@ ip addr show
 
    Now, use the `ssh` command followed by the username on the server and the server's IP address to connect:
 
-```bash
+```
 ssh username@server_ip_address
 ```
 
    For example, if the username on the server is "john" and the server's IP address is "192.168.1.100", you would run:
 
-```bash
+```
 ssh john@192.168.1.100
 ```
 
@@ -48,16 +48,29 @@ ssh john@192.168.1.100
 
 - On your client machine, generate an SSH key pair by running:
 
-```bash
+```
 ssh-keygen
 ```
 
 - Next, copy the public key to your server with the following command:
 
-```bash
+```
 ssh-copy-id username@server_ip_address
 ```
 
 - Now you should be able to SSH into your server without being prompted for a password.
 
 Now, you should be connected to your local network server via SSH on your Debian system.
+
+
+
+> *Adam Malin*
+> 
+> [adammalin.com](https://adammalin.com)
+> 
+> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> 
+> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> 
+> **value4value**
+> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

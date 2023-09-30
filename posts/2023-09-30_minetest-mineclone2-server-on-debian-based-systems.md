@@ -10,8 +10,6 @@ published: '2023-09-30'
 
 In this comprehensive tutorial, we will walk you through the process of setting up a Minetest server with Mineclone2 on a Debian-based system. Minetest is an open-source voxel game engine and game, which is highly modifiable, allowing you to create your own games and experiences. One such modification is Mineclone2, which aims to offer gameplay very similar to Minecraft. We'll cover the installation, configuration, and management of both Minetest and Mineclone2, ensuring you have a robust setup for hosting your voxel game world. Additionally, we'll delve into essential maintenance tasks such as backing up your game world and updating your server software to ensure a smooth, enjoyable gaming experience for you and your players. Whether you're new to server management or an experienced administrator, this guide aims to provide clear, step-by-step instructions to get your Minetest Mineclone2 server up and running.
 
-
-
 Here's a step-by-step guide on how to install and run a Minetest Mineclone2 server on a Debian-based system:
 
 1. **Update System Packages**:
@@ -30,6 +28,7 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
      ```
      sudo apt install minetest-server
      ```
+   
    - The server should start by default. To confirm, run:
      
      ```
@@ -43,12 +42,15 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
      ```
      sudo nano /etc/minetest/minetest.conf
      ```
+   
    - In this file, you can change your server's name, port, description, message of the day, max users, default privileges, etc. 
+   
    - To set an admin username, uncomment the admin line and enter your username:
      
      ```
      name = admin_username
      ```
+   
    - Save and exit the file (in nano, press `Ctrl + X` to close, press `Y` to confirm changes, and press `Enter` to save).
 
 4. **Grant Admin Privileges**:
@@ -62,18 +64,22 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
      ```
      minetest-server --version
      ```
+   
    - Refer to the [MineClone2 forum post](https://forum.minetest.net/viewtopic.php?t=16407) for finding your compatible version.
+   
    - Download the compatible version of MineClone2 using `wget`:
      
      ```
      wget [compatible_version_link]
      ```
+   
    - Unzip the downloaded file and move the folder to the game's directory:
      
      ```
      unzip mineclone2.zip
      sudo mv mineclone2 /var/games/minetest-server/.minetest/games
      ```
+   
    - If the directory doesn't exist, create it and run the move command again.
 
 6. **Update Configuration for MineClone2**:
@@ -83,11 +89,13 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
      ```
      sudo nano /etc/minetest/minetest.conf
      ```
+   
    - Find the `default_game` setting and change it to `mineclone2`:
      
      ```
      default_game = mineclone2
      ```
+   
    - Save and exit the file.
 
 7. **Delete Pre-existing World**:
@@ -116,13 +124,9 @@ Here's a step-by-step guide on how to install and run a Minetest Mineclone2 serv
 
 This guide is tailored to meet the requirements of a Debian-based system as per the instructions in the video tutorial.
 
-
-
 ### Backup the Server's Game World
 
 Here are additional sections on how to backup the server's game world and how to update both Minetest and Mineclone2 while keeping the same world intact:
-
-
 
 1. **Locate the World Directory**:
    
@@ -132,16 +136,17 @@ Here are additional sections on how to backup the server's game world and how to
    
    - Use the `tar` command to create a compressed backup of the world directory. Run the following command:
      
-     ```bash
+     ```
      sudo tar -cvzf world_backup.tar.gz /var/games/minetest-server/.minetest/worlds/world
      ```
+   
    - This command will create a file named `world_backup.tar.gz` containing a backup of your game world.
 
 3. **Move/Copy Backup to a Safe Location**:
    
    - It's a good practice to move or copy the backup file to a different location or even to a different machine for safekeeping.
      
-     ```bash
+     ```
      sudo mv world_backup.tar.gz /path/to/safe/location/
      ```
 
@@ -155,7 +160,7 @@ Here are additional sections on how to backup the server's game world and how to
    
    - If there's a newer version of Minetest available in the repositories, you can update it using the following commands:
      
-     ```bash
+     ```
      sudo apt update
      sudo apt upgrade minetest-server
      ```
@@ -163,14 +168,16 @@ Here are additional sections on how to backup the server's game world and how to
 3. **Update Mineclone2**:
    
    - Download the latest version of Mineclone2 from the [Mineclone2 forum page](https://forum.minetest.net/viewtopic.php?t=16407) or other official sources.
+   
    - Remove the old Mineclone2 directory:
      
-     ```bash
+     ```
      sudo rm -r /var/games/minetest-server/.minetest/games/mineclone2
      ```
+   
    - Unzip and move the new version of Mineclone2 to the games directory:
      
-     ```bash
+     ```
      unzip mineclone2_new_version.zip
      sudo mv mineclone2 /var/games/minetest-server/.minetest/games
      ```
@@ -183,7 +190,7 @@ Here are additional sections on how to backup the server's game world and how to
    
    - Restart the Minetest server to apply the updates:
      
-     ```bash
+     ```
      sudo systemctl restart minetest-server
      ```
 

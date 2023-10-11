@@ -6,8 +6,6 @@ authorId: 'adam'
 published: '2023-10-11'
 ---
 
-
-
 #### **Step 1: Increase Disk Size in Proxmox**
 
 1. **Shutdown the VM**: Ensure it's powered off.
@@ -18,9 +16,11 @@ published: '2023-10-11'
 
 #### **Step 2: Resize Partition and Filesystem in Debian**
 
-1. **Access the VM**: SSH or use the console.
+1. **Access the VM**: SSH or use the console. A like to my tutorial can be found [here](https://habitus.blog/how-to-ssh-into-a-debian-server-running-on-proxmox). 
 
-2. **Parted Utility**: Use `parted` to manage partitions.
+2. **Install Parted Utility**: Use `sudo apt install parted` to install the Parted Utility. 
+
+3. **Parted Utility**: Use `parted` to manage partitions.
    
    ```
    sudo parted
@@ -40,7 +40,7 @@ published: '2023-10-11'
    
    - Exit `parted` with `quit`.
 
-3. **Resize the Filesystem**:
+4. **Resize the Filesystem**:
    
    ```
    sudo resize2fs /dev/sda1

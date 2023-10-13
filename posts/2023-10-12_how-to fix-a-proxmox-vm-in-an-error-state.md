@@ -1,4 +1,10 @@
-# How to Fix A Proxmox VM In An Error State
+---
+title: How to Fix A Proxmox VM In An Error State
+description: Because sometimes it no go.
+categoryId: 'proxmox'
+authorId: 'adam'
+published: '2023-10-12'
+---
 
 It seems like the `ha-manager set vm:104 --state disabled` command was commented out (due to the `#` at the start of the line), so it wasn't executed. Additionally, it seems like the VM process is not running since the `ps -eaf | grep [q]emu-kvm | grep 104` command didn't return any output.
 

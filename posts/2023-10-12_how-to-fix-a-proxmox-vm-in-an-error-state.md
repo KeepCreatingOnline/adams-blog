@@ -6,6 +6,8 @@ authorId: 'adam'
 published: '2023-10-12'
 ---
 
+
+
 It seems like the `ha-manager set vm:104 --state disabled` command was commented out (due to the `#` at the start of the line), so it wasn't executed. Additionally, it seems like the VM process is not running since the `ps -eaf | grep [q]emu-kvm | grep 104` command didn't return any output.
 
 Here are the steps you might want to follow, ensuring each command is executed:
@@ -56,6 +58,8 @@ qm list | grep 104
 - Ensure your Proxmox and its packages are updated to avoid running into known issues that might have been fixed in newer versions.
 
 Remember to always have a good backup strategy in place to safeguard against data loss, especially when dealing with virtual machine management and troubleshooting.
+
+
 
 > *Adam Malin*
 > 

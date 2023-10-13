@@ -48,27 +48,31 @@ In conclusion, while SED offers an intuitive and deterministic framework to inte
 
 ### References
 
-1. **Bethe, H. A., & Salpeter, E. E. (1957).** _Quantum Mechanics of One- and Two-Electron Atoms_. Springer, Berlin; Academic Press, New York. ISBN: Not Available【77†source】【78†source】【80†source】.
+1. **Bethe, H. A., & Salpeter, E. E. (1957).** _Quantum Mechanics of One- and Two-Electron Atoms_. Springer, Berlin; Academic Press, New York.
 
-2. **Condon, E. U., & Shortley, G. H. (1935).** _The Theory of Atomic Spectra_. Cambridge University Press. ISBN: 9780521092098【71†source】【69†source】【68†source】.
+2. **Condon, E. U., & Shortley, G. H. (1935).** _The Theory of Atomic Spectra_. Cambridge University Press.
 
-3. **De la Peña, L., & Cetto, A. M. (1996).** _The Quantum Dice: An Introduction to Stochastic Electrodynamics_ (Fundamental Theories of Physics, Vol. 75). Dordrecht; Boston; London: Kluwer Academic Publishers. ISBN: 0-7923-3818-9【25†source】【27†source】【34†source】【35†source】.
+3. **De la Peña, L., & Cetto, A. M. (1996).** _The Quantum Dice: An Introduction to Stochastic Electrodynamics_ (Fundamental Theories of Physics, Vol. 75). Dordrecht; Boston; London: Kluwer Academic Publishers.
 
-4. **De la Peña, L., & Cetto, A. M. (2006).** The foundations of linear stochastic electrodynamics. _Foundations of Physics, 36_(3), 350-368. [DOI: 10.1007/s10701-006-9046-0](https://doi.org/10.1007/s10701-006-9046-0)【41†source】【42†source】【43†source】【44†source】.
+4. **De la Peña, L., & Cetto, A. M. (2006).** The foundations of linear stochastic electrodynamics. _Foundations of Physics, 36_(3), 350-368. [DOI: 10.1007/s10701-006-9046-0](https://doi.org/10.1007/s10701-006-9046-0).
 
-5. **Feynman, R. P., Leighton, R. B., & Sands, M. (1965).** _The Feynman Lectures on Physics, Vol. III: Quantum Mechanics_. Addison-Wesley. ISBN: 978-0201020144【16†source】【17†source】【18†source】.
+5. **Feynman, R. P., Leighton, R. B., & Sands, M. (1965).** _The Feynman Lectures on Physics, Vol. III: Quantum Mechanics_. Addison-Wesley.
 
-6. **Griffiths, D. J. (2005).** _Introduction to Quantum Mechanics_ (2nd ed.). Upper Saddle River, NJ: Pearson Prentice Hall. ISBN: 0-13-111892-7【7†source】【8†source】【9†source】【10†source】.
+6. **Griffiths, D. J. (2005).** _Introduction to Quantum Mechanics_ (2nd ed.). Upper Saddle River, NJ: Pearson Prentice Hall.
 
-7. **Lamoreaux, S. K. (1997).** Demonstration of the Casimir Force in the 0.6 to 6 μm Range. _Physical Review Letters, 78_(1), 5-8. [DOI: Not Available](https://link.aps.org/doi/10.1103/PhysRevLett.78.5)【59†source】【60†source】【61†source】【62†source】.
+7. **Lamoreaux, S. K. (1997).** Demonstration of the Casimir Force in the 0.6 to 6 μm Range. _Physical Review Letters, 78_(1), 5-8. [DOI: Not Available](https://link.aps.org/doi/10.1103/PhysRevLett.78.5).
 
-8. **Milonni, P. W. (1994).** _The Quantum Vacuum: An Introduction to Quantum Electrodynamics_. San Diego: Academic Press. ISBN: Not Available【50†source】【52†source】【53†source】.
+8. **Milonni, P. W. (1994).** _The Quantum Vacuum: An Introduction to Quantum Electrodynamics_. San Diego: Academic Press.
 
 9. **Setterfield, B. (n.d.).** Quantum Mechanics. Retrieved from [https://barrysetterfield.org/Quantum_Mechanics.html](https://barrysetterfield.org/Quantum_Mechanics.html).
 
 10. **Setterfield, B. (n.d.).** Quantum Effects. Retrieved from [https://barrysetterfield.org/Quantum_Effects/Quantum_Effects.html](https://barrysetterfield.org/Quantum_Effects/Quantum_Effects.html).
 
-11. **Setterfield, B. (2015).** Quantum Effects and the Zero Point Energy. Retrieved from [https://barrysetterfield.org/GSRresearchpapers.html](https://barrysetterfield.org/GSRresearchpapers.html)【117†(source)】.
+11. **Setterfield, B. (2015).** Quantum Effects and the Zero Point Energy. Retrieved from [https://barrysetterfield.org/GSRresearchpapers.html](https://barrysetterfield.org/GSRresearchpapers.html).
+
+
+
+
 
 > *Adam Malin*
 > 

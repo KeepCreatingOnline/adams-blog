@@ -1,4 +1,10 @@
-### The Epoch of Change | Passing Through the AI Evolution with Bitcoin in my Wallet
+---
+title: The Epoch of Change
+description: Passing Through the AI Evolution with Bitcoin in my Wallet
+categoryId: 'bitcoin'
+authorId: 'adam'
+published: '2023-10-12'
+---
 
 In the heart of the digital domain, an intricate problem unfurls: How does one sustainably fund software projects in an arena that ceaselessly morphs and evolves? Ponder with me as we traverse through the problem of software funding, look into the disruptive power of Artificial Intelligence (AI), and explore the mitigating solution of Bitcoin amidst the approaching economic upheavals.
 

@@ -1,4 +1,12 @@
-# Mastering Iterative Dialog with Large Language Models
+---
+title: Mastering Iterative Dialog with Large Language Models
+description: This blog post explores the concept of iterative dialog with Large Language Models (LLMs) like ChatGPT, emphasizing the nuanced, contextually aware conversations that distinguish it from standard Q&A interactions, and explains how to navigate the AI's latent space to maximize the depth and relevance of its responses.
+categoryId: 'ai'
+authorId: 'adam'
+published: '2023-11-03'
+---
+
+![](http://hedgedoc.malin.onl/uploads/08608caf-7727-4227-a2ef-4fb5e470d2dd.jpg)
 
 ## Index
 
@@ -1440,3 +1448,16 @@ The journey of mastering iterative dialog with LLMs is continuous and ever-evolv
 18. **ACL (Association for Computational Linguistics)** - An annual conference focused on computational linguistics and NLP.
     
     - Available on: [ACL](https://www.aclweb.org/portal/)
+
+
+
+> Adam Malin
+> 
+> [adammalin.com](https://adammalin.com)
+> 
+> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> 
+> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> 
+> **value4value**
+> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

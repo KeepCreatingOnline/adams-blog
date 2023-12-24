@@ -59,7 +59,7 @@ published: '2023-05-23'
 - Ensure you have administrative privileges to make these changes.
 - It's always good practice to back up important configuration files before making modifications.
 
-Feel free to follow these steps to configure your Proxmox server to ignore the laptop lid action. Let me know if you need any more help!
+Feel free to follow these steps to configure your Proxmox server to ignore the laptop lid action.
 
 > *Adam Malin*
 > 

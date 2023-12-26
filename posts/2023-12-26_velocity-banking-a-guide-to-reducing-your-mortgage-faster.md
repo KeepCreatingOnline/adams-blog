@@ -8,6 +8,8 @@ published: '2023-12-26'
 
 ![](http://hedgedoc.malin.onl/uploads/bac6b25a-ddf6-424d-99ad-a883a62893d0.png)
 
+[Audio Version Avalable Here](https://soundcloud.com/user-653341896/velocity-banking-a-guide-to-reducing-your-mortgage-faster?si=81d84d2f550e42da8bb2ba4014e9e84e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+
 Velocity banking is a strategy aimed at reducing mortgage debt more efficiently. Here's a simplified guide to help you understand and potentially utilize this method.
 
 After reading this post, talk with [Mortgage Master](https://chat.openai.com/g/g-o7JOGIL0E-mortgage-master) about your situation and devise a strategy to pay off your mortgage today! Mortgage Master is a custom GPT assistant I made to be  an expert in Velocity banking.

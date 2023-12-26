@@ -43,7 +43,7 @@ const categories = {
         description: "The only true money.",
     },
     "money": {
-        name: "money",
+        name: "Money",
         description: "You need Money right now to get more Bitcoin.",
     },
     "philosophy": {

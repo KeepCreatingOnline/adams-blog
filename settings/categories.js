@@ -42,6 +42,10 @@ const categories = {
         name: "Bitcoin",
         description: "The only true money.",
     },
+    "money": {
+        name: "money",
+        description: "You need Money right now to get more Bitcoin.",
+    },
     "philosophy": {
         name: "Philosophy",
         description: "from Greek: φιλοσοφία, philosophia, 'love of wisdom'",

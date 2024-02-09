@@ -24,20 +24,22 @@ I will post stuff here from time to time.
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)
 
 
-<div id="nostr-embed-npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx"></div>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #19181A; min-height: 100vh;">
+  <div id="nostr-embed-npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx"></div>
+</div>
 <script>
 !(function () {
-  const n=document.createElement('script');
-  n.type='text/javascript';
-  n.async=!0;
-  n.src='https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@0.1.16/dist/nostr-embed.js';
+  const n = document.createElement('script');
+  n.type = 'text/javascript';
+  n.async = !0;
+  n.src = 'https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@0.1.16/dist/nostr-embed.js';
   const options = {
     showZaps: true,
-    showCopyAddr: false,
-    hideNostrich: false,
+    showCopyAddr: true,
+    hideNostrich: true,
     showFollowing: true,
   };
-  n.onload=function () {
+  n.onload = function () {
     nostrEmbed.init(
       'npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx',
       '#nostr-embed-npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx',
@@ -45,7 +47,7 @@ I will post stuff here from time to time.
       options
     );
   };
-  const a=document.getElementsByTagName('script')[0];
+  const a = document.getElementsByTagName('script')[0];
   a.parentNode.insertBefore(n, a);
 })();
 </script>

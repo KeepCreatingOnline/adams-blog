@@ -141,6 +141,8 @@ Factoring in the interest on your line of credit is essential for a realistic as
 > You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
-> 
+>
+> You can view and write comments on this or any other post by using the [Satcom](https://github.com/jinglescode/web-content-conversation) browser extention.
+>
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

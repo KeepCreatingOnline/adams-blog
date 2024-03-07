@@ -6,6 +6,8 @@ authorId: 'adam'
 published: '2023-11-09'
 ---
 
+![](https://image.nostr.build/5f70719eccff0d5e4d2456d6759d1d45810cf1b5f733fd1614e9cb78aaed2260.jpg)
+
 ![](http://hedgedoc.malin.onl/uploads/3973946a-a147-4909-a39a-fd727506959d.jpg)
 
 https://www.tradingview.com/chart/tKlgCet5/

@@ -6,6 +6,12 @@ authorId: 'adam'
 published: '2023-10-12'
 ---
 
+
+
+![](https://image.nostr.build/571eb9060a89e788e8e4ce37035be029771a5e8686e612de6e3967e8a1eb19c5.jpg)
+
+
+
 In the heart of the digital domain, an intricate problem unfurls: How does one sustainably fund software projects in an arena that ceaselessly morphs and evolves? Ponder with me as we traverse through the problem of software funding, look into the disruptive power of Artificial Intelligence (AI), and explore the mitigating solution of Bitcoin amidst the approaching economic upheavals.
 
 ### 1. Revisiting and Rekindling Stallman’s Vision
@@ -49,8 +55,8 @@ Join me in this exploration, as we endeavor to chart a course through these entw
 > You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
 > 
 > `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
->
+> 
 > You can view and write comments on this or any other post by using the [Satcom](https://github.com/jinglescode/web-content-conversation) browser extention.
->
+> 
 > **value4value**
 > Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)

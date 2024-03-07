@@ -6,6 +6,8 @@ authorId: 'adam'
 published: '2023-10-12'
 ---
 
+![](https://image.nostr.build/4a3273694053e45a706afef62706d9c8519e0fec30a55d81a917536956de1d55.jpg)
+
 **Concrete Causality: How Stochastic Electrodynamics Explains Quantum Effects**
 
 Exploring the unconventional interpretations of quantum mechanics, this article unveils the intricate details of the double-slit experiment, scrutinizing the complexities of Quantum Electrodynamics (QED) and the potential of Stochastic Electrodynamics (SED).

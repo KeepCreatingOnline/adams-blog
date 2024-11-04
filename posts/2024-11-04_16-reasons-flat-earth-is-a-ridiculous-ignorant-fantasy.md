@@ -1,6 +1,6 @@
 ---
-title: 16 Reasons Flat Earth is a Ridiculous, Ignorant Fantasy
-description: Let’s cut to the chase: the Earth is not flat, and believing otherwise requires a shocking level of intellectual dishonesty and willful ignorance. Flat Earth theories are ridiculous, relying on warped logic, cherry-picked pseudo-science, and complete disregard for basic reality. Here are 16 irrefutable facts that crush any notion of a flat Earth—if you’re willing to actually look at them.
+title: 16 Reasons Flat Earth is a Ridiculous Ignorant Fantasy
+description: Let’s cut to the chase. the Earth is not flat, and believing otherwise requires a shocking level of intellectual dishonesty and willful ignorance. Flat Earth theories are ridiculous, relying on warped logic, cherry-picked pseudo-science, and complete disregard for basic reality. Here are 16 irrefutable facts that crush any notion of a flat Earth—if you’re willing to actually look at them.
 categoryId: 'science'
 authorId: 'adam'
 published: '2024-11-04'

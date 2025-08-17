@@ -27,6 +27,7 @@ function Main({ title, description, ...props }) {
                 { props.image ? <meta property="og:image" content={props.image} /> : blogLogoURL && <meta property="og:image" content={blogLogoURL} /> }
                 { props.head }
             </head>
+            <script defer src="http://umbrel.local:25727/script.js" data-website-id="8852c953-7d8f-40e4-aa17-97659b91baa5"></script>
             <body className="flex flex-col min-h-screen text-gray-900 dark:bg-gray-900 dark:text-gray-200">
                 <Nav />
                 { props.children }

@@ -18,6 +18,7 @@ function Main({ title, description, ...props }) {
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
                 <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
                 <script src="/js/darkmode.min.js"></script>
+                <script defer src="https://umami.malin.onl/script.js" data-website-id="8852c953-7d8f-40e4-aa17-97659b91baa5"></script>
                 { props.path && <link rel="canonical" href={blogDomain + props.path} /> }
                 { props.image ? <meta name="twitter:card" content="summary_large_image" /> : <meta name="twitter:card" content="summary" /> }
                 { blogTwitter && <meta name="twitter:site" content={blogTwitter} /> }
@@ -27,14 +28,13 @@ function Main({ title, description, ...props }) {
                 { props.image ? <meta property="og:image" content={props.image} /> : blogLogoURL && <meta property="og:image" content={blogLogoURL} /> }
                 { props.head }
             </head>
-            <script defer src="http://umbrel.local:25727/script.js" data-website-id="8852c953-7d8f-40e4-aa17-97659b91baa5"></script>
             <body className="flex flex-col min-h-screen text-gray-900 dark:bg-gray-900 dark:text-gray-200">
                 <Nav />
                 { props.children }
                 <Footer />
                 {
                     // uncomment this to add your custom javascript 
-                    // <script src="/js/index.min.js" async></script>
+                    <script src="/js/index.min.js" async></script>
                 }
             </body>
         </html>

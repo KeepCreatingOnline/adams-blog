@@ -93,7 +93,7 @@ Cloudflare Zero Trust → **Access → Tunnels → <your tunnel> → Public host
 
 Save, then test:
 
-```bash
+```
 curl -I https://app.yourdomain.com/
 ```
 
@@ -113,7 +113,7 @@ If you see `200`, `301`, or `302`, you’re done.
 
 * **n8n with webhooks / OAuth:**
 
-  ```env
+  ```
   N8N_HOST=app.yourdomain.com
   N8N_PROTOCOL=https
   WEBHOOK_URL=https://app.yourdomain.com/

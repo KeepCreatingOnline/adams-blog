@@ -80,11 +80,11 @@ In conclusion, while SED offers an intuitive and deterministic framework to inte
 > 
 > [adammalin.com](https://adammalin.com)
 > 
-> You can find me on [Twitter](https://twitter.com/thePR0M3TH3AN) or on Nostr at
+> You can find me on Nostr at:
 > 
-> `npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx`
+> [npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx](https://primal.net/p/nprofile1qqs2ff44sjduj9anhm74eqvxtmst3pmndyrqnss8hfjc3me7rczmjkchrgxqm)
 >
 > You can view and write comments on this or any other post by using the [Satcom](https://github.com/jinglescode/web-content-conversation) browser extention.
 >
 > **value4value**
-> Did you find any value from this article? [Click here to send me a tip!](https://adammalin.com/tip)
+> Did you find any value from this article? [Click here to send me a tip!](https://nostrtipjar.netlify.app/?n=npub15jnttpymeytm80hatjqcvhhqhzrhx6gxp8pq0wn93rhnu8s9h9dsha32lx)

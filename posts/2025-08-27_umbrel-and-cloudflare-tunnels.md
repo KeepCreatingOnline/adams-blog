@@ -6,142 +6,164 @@ authorId: 'adam'
 published: '2025-08-27'
 ---
 
-# Umbrel + Cloudflare Tunnel: Quick & *Pretty Easy*
+**Written by Adam — August 27, 2025**
 
-![](http://hedgedoc.malin.onl/uploads/e250d0d8-0386-4d8c-8ebe-a6f805ba1e31.jpg)
+A dead-simple way to expose Umbrel apps via Cloudflare Tunnel **without** reverse-proxy gymnastics.
 
-You don’t need complex reverse-proxy gymnastics. For most Umbrel apps, all you need is:
+> ⚠️ **Placeholder warning**: In examples below, replace `app.example.com` with a hostname you actually own. Domains like `yourdomain.com` are real sites on the internet and won’t point to your tunnel.
 
-1. point your Cloudflare Tunnel hostname at the **correct container name** on the **right port**, and
-2. set the **HTTP Host header** to the public hostname.
+---
 
-That’s it.
+## TL;DR
+
+* Create a Cloudflare Tunnel and add a **Public hostname** per app.
+* **Service** should be `http://<APP_CONTAINER>:<INTERNAL_PORT>` (container name + internal port).
+* **HTTP Host header** must match the public hostname.
+* Don’t use Umbrel’s host ports (e.g., 2283/8182) when routing inside Docker; discover the **internal** port.
 
 ---
 
 ## 1) Prereqs (one-time)
 
-* Add your domain to **Cloudflare** (nameservers pointing to Cloudflare).
-* On Umbrel, install the **Cloudflare Tunnel** app and paste your **connector token** from the Cloudflare Zero Trust dashboard.
-* In Cloudflare Zero Trust: **Access → Tunnels → Create** (your tunnel should show **Active** once Umbrel connects).
+* Add your domain to Cloudflare (nameservers at Cloudflare).
+* On Umbrel, install **Cloudflare Tunnel** and paste your connector token from **Zero Trust → Access → Tunnels**.
+* In **Zero Trust → Access → Tunnels**, your tunnel should show **Active** after the connector is running.
 
 ---
 
-## 2) Find the **container name** *and* **port**
+## 2) Find the container **name** and the **internal port**
 
-You need two things to publish an app: the container’s **name** and the **port** it listens on.
+You need both to publish an app via the tunnel.
 
-### A) Easiest: read it from the Umbrel app’s local URL
+### 2A) Grab the container name
 
-* Open the app from the Umbrel dashboard.
-* Look at the browser’s address bar — many apps include the port (e.g., `http://umbrel.local:2283` → port is **2283**).
-* You’ll still target the **container name** (not the host), but the **port number** is the same.
-
-### B) Reliable (works for every app): ask Docker for the container name and port
+List relevant containers and note the app’s `*_web_1` or `*_server_1` name and the connector:
 
 ```
-# List relevant containers (note the app and cloudflared names)
-sudo docker ps --format '{{.Names}}\t{{.Image}}' | egrep 'cloudflared|immich|n8n|nextcloud|jellyfin|gitea|qbittorrent|transmission'
+sudo docker ps --format '{{.Names}}\t{{.Image}}' | egrep 'cloudflared|immich|n8n|nextcloud|jellyfin|gitea|qbittorrent|transmission|homarr|searxng'
 ```
 
-Pick the “server” container for your app (examples):
+Examples:
 
 * Cloudflare connector → `cloudflared_connector_1`
 * n8n → `n8n_server_1`
 * Immich → `immich_server_1`
+* SearXNG → `searxng_web_1`
 
-Now discover the app’s **listening ports** (inside the container):
+### 2B) Discover the app’s **internal** listening port (don’t guess)
+
+Run `ss`/`netstat` inside the app container and look for a `LISTEN` on `0.0.0.0:<PORT>` or `:::<PORT>`:
 
 ```
-# Replace APP_CONTAINER with your app's container, e.g., n8n_server_1
-APP_CONTAINER=n8n_server_1
+# Replace with your container, e.g., searxng_web_1
+APP_CONTAINER=searxng_web_1
 sudo docker exec -it "$APP_CONTAINER" sh -lc 'command -v ss >/dev/null && ss -ltnp || netstat -ltnp || true'
 ```
 
-Look for a `LISTEN` entry on `0.0.0.0:<PORT>` or `:::<PORT>` that matches the web server (that’s your port).
-Common examples (for reference only): n8n **5678**, Immich **2283**, Jellyfin **8096**, Gitea **3000**, Transmission **9091**.
+Common internal ports (for reference only—verify yours!):
 
-### C) Double-check with a curl probe (optional but fast)
+| App          | Typical Container       | **Internal Port** |
+| ------------ | ----------------------- | ----------------- |
+| SearXNG      | `searxng_web_1`         | **8080**          |
+| n8n          | `n8n_server_1`          | **5678**          |
+| Immich       | `immich_server_1`       | **2283**          |
+| Jellyfin     | `jellyfin_server_1`     | **8096**          |
+| Gitea        | `gitea_server_1`        | **3000**          |
+| Transmission | `transmission_server_1` | **9091**          |
+
+> 💡 **Host vs Internal ports**: Umbrel’s dashboard often exposes apps on **host** ports like `2283`/`8182` through an app-proxy. Those numbers **are not** what other containers see. Cloudflare Tunnel runs as a container and must connect to the **internal** port that the app itself binds to (e.g., `8080`).
+
+### 2C) Sanity-check with a Docker-network curl probe (fast & reliable)
+
+Attach the connector to the app’s network (no output if already attached), then probe the app **by name + internal port**:
 
 ```
-# Identify the app's network
+# 1) App’s network
 NET=$(sudo docker inspect "$APP_CONTAINER" --format '{{json .NetworkSettings.Networks}}' | jq -r 'keys[]' | head -n1)
 
-# Put the Cloudflare connector on that network (no output if already attached)
+# 2) Put connector on that network
 sudo docker network connect "$NET" cloudflared_connector_1 2>/dev/null || true
 
-# Test the port you think is correct (replace 5678 with yours)
-sudo docker run --rm --network "$NET" curlimages/curl:8.9.1 -I "http://$APP_CONTAINER:5678/"
-# Expect HTTP/1.1 200 or a 3xx
+# 3) Probe (replace 8080 with your discovered internal port)
+PORT=8080
+sudo docker run --rm --network "$NET" curlimages/curl:8.9.1 -I "http://$APP_CONTAINER:${PORT}/"
+# Expect HTTP/1.1 200 OK or a 3xx
 ```
 
+If that works internally, your Cloudflare mapping will work once the Public hostname uses `http://<APP_CONTAINER>:<INTERNAL_PORT>`.
+
 ---
 
-## 3) Create the **Public Hostname** in Cloudflare
+## 3) Create the Public Hostname in Cloudflare
 
-Cloudflare Zero Trust → **Access → Tunnels → <your tunnel> → Public hostnames → Add a public hostname**:
+**Zero Trust → Access → Tunnels → \[your tunnel] → Public hostnames → Add a public hostname**
 
-* **Hostname:**
-  `app.yourdomain.com`
+* **Hostname**: `app.example.com`
+* **Service**: `http://<APP_CONTAINER>:<INTERNAL_PORT>`
+  Example: `http://searxng_web_1:8080` or `http://n8n_server_1:5678`
+* **Additional application settings → HTTP → HTTP Host header**: `app.example.com`
 
-* **Service:**
-  `http://<APP_CONTAINER>:<PORT>`
-  *(Example: `http://n8n_server_1:5678` or `http://immich_server_1:2283`)*
-
-* **Additional application settings → HTTP → HTTP Host header:**
-  `app.yourdomain.com`
-
-Save, then test:
+Test from anywhere:
 
 ```
-curl -I https://app.yourdomain.com/
+curl -I https://app.example.com/
+# 200/301/302 = good
 ```
 
-If you see `200`, `301`, or `302`, you’re done.
+If it fails but the internal probe worked, the Host header is usually the culprit—make sure it matches the public hostname **exactly**.
 
 ---
 
-## 4) That’s all most Umbrel apps need
+## 4) Special cases (rare but handy)
 
-* Use **container names**, not IPs (IPs change).
-* Set **HTTP Host header** to match the public hostname.
-* Route each app with its own **Public hostname** entry.
+**n8n with webhooks / OAuth**
 
----
+```
+# Prevents invalid redirect URIs and internal webhook URLs
+N8N_HOST=app.example.com
+N8N_PROTOCOL=https
+WEBHOOK_URL=https://app.example.com/
+N8N_PROXY_HOPS=1
+```
 
-## When you might need more than this (rare but useful)
+**Lock UI but keep webhooks public**: Protect `n8n.example.com` with Cloudflare Access; create `webhook.example.com` (no Access) pointing to the same container/port.
 
-* **n8n with webhooks / OAuth:**
+**Origin TLS / self-signed**: If the app serves HTTPS internally, either install a Cloudflare **Origin Certificate** in the container or set `noTLSVerify: true` on that hostname (skips origin cert validation).
 
-  ```
-  N8N_HOST=app.yourdomain.com
-  N8N_PROTOCOL=https
-  WEBHOOK_URL=https://app.yourdomain.com/
-  N8N_PROXY_HOPS=1
-  ```
-
-  (Prevents “invalid redirect URI” and internal webhook URLs.)
-
-* **Lock down UI but keep webhooks public:**
-  Protect `n8n.yourdomain.com` with Cloudflare **Access**, use `webhook.yourdomain.com` for public webhooks (both point to the same container/port).
-
-* **Origin TLS / self-signed:**
-  If your app serves HTTPS internally, either install a Cloudflare **Origin Cert** or set `noTLSVerify: true` on that hostname.
-
-* **Non-HTTP apps (SSH, DBs):**
-  Use a **TCP** tunnel/route, not HTTP.
+**Non-HTTP apps (SSH/DB)**: Use a **TCP** route under the same tunnel; HTTP settings (like Host header) don’t apply.
 
 ---
 
-## Quick troubleshooting
+## Troubleshooting (quick flow)
 
-* **502 from Cloudflare:** tunnel reached your network but not the app → recheck container name/port; run the curl probe on the Docker network.
-* **404 from tunnel:** hostname not matched → fix the Public hostname entry (ensure the catch-all isn’t shadowing).
-* **Works on LAN, not via tunnel:** set **HTTP Host header** to your public hostname.
+1. **Tunnel status**: In Zero Trust, tunnel is **Active**.
+2. **Internal probe**: `curl -I http://<APP_CONTAINER>:<INTERNAL_PORT>/` from the app’s Docker network returns **200/3xx**.
+3. **Public hostname**:
+
+   * Service uses `http://<APP_CONTAINER>:<INTERNAL_PORT>` (not host port)
+   * **HTTP Host header** equals your public hostname
+4. **No conflicting rules**: Check Cloudflare **Redirect Rules / Bulk Redirects / Page Rules / Workers** on that hostname.
+5. **Placeholder pitfall**: Ensure you’re testing your real domain, not a generic example.
+
+Common errors:
+
+* **502 from Cloudflare**: Tunnel reached your network but not the app → wrong container name/port or connector not on the right network.
+* **404 from tunnel**: Hostname mismatch → fix the Public hostname or a catch‑all entry shadowing it.
+* **Works on LAN, not via tunnel**: Host header not set to your public hostname.
 
 ---
 
-**TL;DR:** Find the **container name** and **port** (from the Umbrel URL or Docker), then in Cloudflare map `app.yourdomain.com → http://<container>:<port>` and set **HTTP Host header** to `app.yourdomain.com`. For most Umbrel apps, that’s all you need.
+## Example: SearXNG on Umbrel
+
+* Container: `searxng_web_1`
+* Internal port (discovered via step 2B): typically **8080**
+* Cloudflare Public hostname:
+
+  * **Hostname**: `search.example.com`
+  * **Service**: `http://searxng_web_1:8080`
+  * **HTTP Host header**: `search.example.com`
+
+That’s it. For most Umbrel apps, mapping `app.example.com → http://<container>:<internal_port>` and setting the Host header is all you need.
 
 
 > *Adam Malin*
